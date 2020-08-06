@@ -1,0 +1,172 @@
+punto 1  
+
+                MOSQUITO 
+                var aguante
+                var cantidadDePicados 
+				method picar()
+				method aguante() 
+				method quierePicar()
+				method picadorFrecuente()
+MOSQUITO PESADO 	
+hereda todo lo mensajes q entendiende mosquito +
+var peso
+y method picar() modificado
+
+MOSQUITO GLOTON
+hereda todo lo que entiende mosquito pesado
++
+method quierePicar() modificado
+
+MOSQUITO CON VENENO
+hereda todo lo que entiende mosquito + 
+var veneno
+method descansar()
+
+method quierePicar() modificado
+
+MOSQUITO CON VENENO MORTAL
+hereda todo lo que entiendo mosquito con veneno +
+var mortalidad
+method esMortal()
+method picar() modificado
+method descansar() modificado
+method quierePicar() modificado
+
+MOSQUITO AGUANTADOR 
+
+hereda todo lo que entiende mosquitoConVenenoMortal
+
+method aguante() modificado
+
+
+PUNTO 2 - los cuatro mosquitos entienden  : aguante y cantidadDePicados
+
+mosquito pesado y mosquito gloton  : aparte de aguante y cantidadDePicados, tambien tiene entienden un atributo  peso
+
+mosquitoConVeneno : aparte de aguante y cantidadDePicados  entiende  un atributo veneno 
+
+mosquitoConVenenoMoral : aparte de aguante y cantidadDePicados entiende un atributo veneno y 
+un atributo mortalidad.
+
+mosquitoAguantador : entiende aguante , cantidadDePicados , veneno y mortalidad . 
+
+PUNTO 3 - 
+
+mosquitoPesado : su peso cambia a peso = 20,4
+
+mosquitoGloton : su peso cambia a peso  = 20,4
+
+mosquitoConVeneno : su aguante cambia a aguante = 960
+					quedaria cantidadDePicados = 1
+					quedaria veneno = 19 
+
+mosquitoConVenenoMortal : su aguante cambia a aguante = 960
+						  quedaria cantidadDePicados = 1
+						  quedaria mortalidad = 8
+					
+mosquitoAguantador : 	su aguante cambia a aguante = 960
+						  quedaria cantidadDePicados = 1
+						  quedaria mortalidad = 8
+
+(estan aclarados los atributos en los que surge efecto tras picar)
+
+PUNTO 4 -
+
+EL MOSQUITO 4 NO VA QUERER PICAR PORQUE NO CUMPLE TODAS LAS CONDICIONES ,
+
+SI CUMPLE CON QUE LA MORTALIDAD SEA MAYOR A 4  PERO NO CUMPLE CON QUE EL AGUANTE 
+
+SEA MAYOR A 500. 	
+
+PUNTO 5 - 
+
+SI  PODRIA PICAR PORQUE mosquitoConVenenoMortal hereda de la clase mosquitoConVeneno
+
+y las condiciones para que pique el mosquito en vez de las del punto 4 ahora serian
+
+solamente que  la mortalidad  > 4  y veneno > 5  entonces cumple las condiciones para
+
+picar .
+
+PUNTO 6 -
+
+DENCANSAR  : LO ENTIENDE  MosquitoConVeneno , MosquitoConVenenoMortal 
+
+y mosquitoAguantador .
+
+quierePicar : LO Entienden todos los mosquitos .
+
+peso :  Lo entiende mosquitoPesado y mosquitoGloton.
+
+picadorFrecuente : lo entienden todos los mosquitos .
+
+esMortal : lo entiende MosquitoConVenenoMortal y mosquitoAguantador.
+
+
+
+PUNTO 7 - 
+
+mosquito1 y mosquito  2  dara verdadero porque ambos cumplen la condicion
+
+de que el aguante sea mayor a 500.
+
+mosquito 3 dara falso porque no cumple la condicion de que el aguante
+
+sea mayor a 500.
+
+mosquito 4 dara verdadero porque cumple ambas condiciones de que 
+
+el aguante sea mayor a 500 y la mortalidad mayor a 4.
+
+
+PUNTO 8 -
+
+
+mosquito 4 : dara falso porque no cumple ambas condiciones ,
+	     si cumple que la mortalidad sea mayor a 4  pero
+	     no cumple que el aguante sea mayor a 2000
+
+mosquito 5 : dara verdadero porque cumple ambas condiciones
+	     se modifica el method aguante() que le suma al aguante
+              actual 500.
+
+PUNTO 9 - 
+
+1 -   class MosquitoConVenenoSabio inherits mosquitosConVeneno  {
+		
+		override  method picadorFrecuente() { return super() or veneno > 50 }
+}
+
+2 - 
+	   class mosquitoConFiaca inherits Mosquito {
+	   		 
+	   		 override mehod quierePicar() { return false }		
+	   		
+		}  		  
+
+
+INMUEBLE 
+PUNTO 1 -
+se debe agregar ala class Inmueble 
+el method ponerBalcon() {
+const balcon = new Caracteristica()
+Y EN class Caracterista tipo balcon para que pueda 
+tener valorizacion
+}
+const departamento = new Inmueble()
+
+departamento.ponerAmbientes(3)
+departamento.ponerBalcon()
+departamento.ponerLavadero()
+departamento.ponerTechoDeLoza()
+departamento.ponerBaulera()
+departamento.tipo("casa normal")
+
+
+
+						  
+						  						
+						
+
+
+
